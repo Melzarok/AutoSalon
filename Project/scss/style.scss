@@ -1,0 +1,130 @@
+// ===== Переменные =====
+
+// Шрифт
+$font-family: 'Manrope', sans-serif;
+
+// Цвета
+$color-bg: #FFFFFF; // фон страницы
+$color-bg-section: #F6F5F3; // фон секций и карточек
+$color-text: #222831; // основной текст
+$color-text-muted: #4A4F57; // второстепенный текст: подписи, характеристики
+$color-accent: #F97316; // фон главных кнопок
+$color-accent-dark: #C2560C; // цены, ссылки, «Salon» в логотипе
+$color-border: #ECEAE6; // рамки и разделители
+
+// Отступы — только эти значения
+$space-8: 8px;
+$space-12: 12px;
+$space-16: 16px;
+$space-20: 20px;
+$space-24: 24px;
+$space-40: 40px;
+$space-48: 48px;
+
+// Размеры
+$container: 1200px; // максимальная ширина контента
+$control-h: 44px; // высота кнопок и полей
+$radius-sm: 10px; // кнопки, поля
+$radius-md: 16px; // карточки, форма
+
+// ===== Общее =====
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    color: $color-text;
+    background-color: $color-bg;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: $color-text;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+
+    span {
+        color: $color-accent-dark;
+    }
+}
+
+
+
+.header {
+    background-color: $color-bg;
+    padding: $space-16 0;
+    border-bottom: 1px solid $color-border;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    &__container {
+        max-width: $container;
+        margin: 0 auto;
+        padding: 0 $space-24;
+        display: flex;
+        align-items: center;
+        gap: $space-24;
+        flex-wrap: wrap;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-24;
+
+        a {
+            font-size: 15px;
+            font-weight: 500;
+            color: $color-text;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-accent-dark;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: $space-12;
+        margin-left: auto;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: $control-h;
+        height: $control-h;
+        padding: 0;
+        border-radius: $radius-sm;
+        background-color: $color-bg;
+        border: 1px solid $color-border;
+        color: $color-text;
+        font-size: $space-16;
+    }
+
+    &__login {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: $space-8;
+        height: $control-h;
+        padding: 0 18px;
+        border-radius: $radius-sm;
+        border: 2px solid #EA580C;
+        font-size: 15px;
+        font-weight: 700;
+        color: $color-text;
+        text-decoration: none;
+        background-color: #FFF4EC;
+
+        i {
+            color: $color-accent-dark;
+            font-size: 18px;
+        }
+    }
+}

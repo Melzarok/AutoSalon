@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoSalon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="logo">Auto<span>Salon</span></a>
+
+      <nav class="header__nav">
+        <a href="#">Каталог</a>
+        <a href="#">Нові авто</a>
+        <a href="#">З пробігом</a>
+        <a href="#">Тест-драйв</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" aria-label="Пошук" class="header__search"><i class="bi bi-search"
+            aria-hidden="true"></i></button>
+        <a href="#" class="header__login"><i class="bi bi-person" aria-hidden="true"></i>Увійти</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- БАНЕР -->
+    <section>
+      <div>
+        <div>
+          <p>Нові та вживані авто</p>
+          <h1>Знайдіть авто, яке їде у ваш ритм</h1>
+          <p>Перевірені автомобілі в наявності, прозорі ціни та тест-драйв у зручний для вас день.</p>
+          <div>
+            <a href="#">Записатися на тест-драйв</a>
+            <a href="#">Залишити заявку</a>
+          </div>
+        </div>
+        <img src="image/hero.jpg" alt="Автомобіль у салоні AutoSalon" />
+      </div>
+    </section>
+
+    <!-- ЩО ВАС ЦІКАВИТЬ -->
+    <section>
+      <h2>Що вас цікавить?</h2>
+      <div>
+        <a href="#">
+          <span>Нові авто</span>
+          <span>Автомобілі з салону, 0 км пробігу</span>
+        </a>
+        <a href="#">
+          <span>З пробігом</span>
+          <span>Перевірені вживані автомобілі</span>
+        </a>
+        <a href="#">
+          <span>Тест-драйв</span>
+          <span>Оберіть авто та зручний день</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ПОШУК -->
+    <section>
+      <form action="#">
+        <h2>Пошук авто</h2>
+        <div>
+          <label>Стан
+            <select name="condition">
+              <option>Усі</option>
+              <option>Нові</option>
+              <option>З пробігом</option>
+            </select>
+          </label>
+          <label>Марка
+            <select name="brand">
+              <option>Будь-яка</option>
+            </select>
+          </label>
+          <label>Модель
+            <select name="model">
+              <option>Будь-яка</option>
+            </select>
+          </label>
+          <label>Ціна від, $
+            <input type="number" name="price_from" placeholder="10 000" />
+          </label>
+          <label>Ціна до, $
+            <input type="number" name="price_to" placeholder="60 000" />
+          </label>
+          <label>Пальне
+            <select name="fuel">
+              <option>Будь-яке</option>
+              <option>Бензин</option>
+              <option>Дизель</option>
+              <option>Гібрид</option>
+              <option>Електро</option>
+            </select>
+          </label>
+          <button type="submit">Шукати</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- АВТО В НАЯВНОСТІ -->
+    <section>
+      <div>
+        <h2>Авто в наявності</h2>
+        <a href="#">Дивитись усі →</a>
+      </div>
+
+      <div>
+        <article>
+          <div>
+            <img src="image/car-1.jpg" alt="Toyota RAV4 2025" />
+            <span>Нове</span>
+          </div>
+          <h3>Toyota RAV4 2025</h3>
+          <p>42 300 $</p>
+          <p>Гібрид · 2.5 л · Варіатор · 0 км</p>
+          <a href="#">Детальніше</a>
+        </article>
+
+        <article>
+          <div>
+            <img src="image/car-2.jpg" alt="Skoda Kodiaq 2026" />
+            <span>Нове</span>
+          </div>
+          <h3>Skoda Kodiaq 2026</h3>
+          <p>50 558 $</p>
+          <p>Дизель · 2.0 л · Автомат · 0 км</p>
+          <a href="#">Детальніше</a>
+        </article>
+
+        <article>
+          <div>
+            <img src="image/car-3.jpg" alt="Toyota Camry 2019" />
+            <span>З пробігом</span>
+          </div>
+          <h3>Toyota Camry 2019</h3>
+          <p>20 560 $</p>
+          <p>Бензин · 2.5 л · Автомат · 206 тис. км</p>
+          <a href="#">Детальніше</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ТЕСТ-ДРАЙВ -->
+    <section>
+      <div>
+        <h2>Не впевнені? Спробуйте за кермом</h2>
+        <p>Запишіться на безкоштовний тест-драйв будь-якого авто з наявності.</p>
+      </div>
+      <a href="#">Записатися</a>
+    </section>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer id="contacts">
+    <div>
+      <div>
+        <a href="index.html">Auto<span>Salon</span></a>
+        <p>Нові та вживані авто</p>
+      </div>
+      <div>
+        <h3>Контакти</h3>
+        <p>[АДРЕСА САЛОНУ]</p>
+        <p>[ТЕЛЕФОН]</p>
+        <p>Пн–Сб 9:00–19:00</p>
+      </div>
+      <div>
+        <h3>Розділи</h3>
+        <a href="#">Каталог</a>
+        <a href="#">Тест-драйв</a>
+        <a href="#">Особистий кабінет</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
